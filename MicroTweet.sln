@@ -7,11 +7,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{88FDD759-58E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{9DD48609-A8F4-4152-AE8E-937A9E9155FA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tweet", "Tweet", "{0D049213-17BD-41B7-8524-42B716AA0A95}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tweet", "tweet", "{0D049213-17BD-41B7-8524-42B716AA0A95}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{C8B5F323-611C-4523-80FF-5A1C3747AC04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroTweet.Tweet.Api", "MicroTweet.Tweet.Api\MicroTweet.Tweet.Api.csproj", "{2F2ADC1D-0A8E-421B-A6FF-358E58673ECA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroTweet.Tweets.Api", "MicroTweet.Tweet.Api\MicroTweet.Tweets.Api.csproj", "{2F2ADC1D-0A8E-421B-A6FF-358E58673ECA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
