@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MicroTweet.Tweets.Api.Models.Entities;
-using MongoDB.Driver;
-using MongoDB.EntityFrameworkCore.Extensions;
+using System.Reflection;
 
 namespace MicroTweet.Tweets.Api.Persistence.Context;
 
@@ -12,7 +11,8 @@ public class TweetDbContext(DbContextOptions<TweetDbContext> options) : DbContex
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
-        modelBuilder.Entity<Tweet>().ToCollection("Tweets");
+        modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
     }
 
 }
