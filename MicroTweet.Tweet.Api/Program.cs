@@ -12,6 +12,7 @@ builder.Services.RegisterServices();
 builder.Services.RegisterBackgroundServices();
 builder.Services.RegisterDbContext(builder.Configuration);
 builder.Services.RegisterMapster();
+builder.Services.RegisterMasstransitServices();
 
 
 var app = builder.Build();

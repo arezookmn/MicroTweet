@@ -10,6 +10,7 @@ using System.Collections.Concurrent;
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using FluentValidation;
+using MassTransit;
 
 namespace MicroTweet.Tweets.Api.Extentions;
 
@@ -35,6 +36,12 @@ public static class ServiceCollectionExtentions
     {
         services.AddHostedService<CreatedTweetBackgroundService>();
         services.AddSingleton<ConcurrentQueue<CreatedTweetContext>>();
+
+    }
+
+    public static void RegisterMasstransitServices(this IServiceCollection services)
+    {
+        services.AddMassTransit(configure => configure.UsingInMemory());
 
     }
 
